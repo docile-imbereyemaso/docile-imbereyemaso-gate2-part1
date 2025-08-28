@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/46ecabe206.js" crossorigin="anonymous"></script>
+
+    <script src="./src/main.js" type="module"defer></script>
   </head>
   <body class="font-poppins max-lg:overflow-x-hidden">
     
@@ -25,7 +27,7 @@
       </div>
              <div class="md:hidden space-x-3  ">
         <i class="text-3xl fa-solid fa-magnifying-glass"></i>
-        <i class="text-3xl fa-solid fa-bars"></i>
+        <i class="text-3xl fa-solid fa-bars" id="menu"></i>
       </div>
       </div>
      
@@ -43,7 +45,19 @@
      </nav>
 
      <!-- toggle navbar -->
-
+      <nav class="bg-white min-h-full   md:hidden  top-20 w-150 left-40 px-5 py-3 fixed translate-x-160 transition-transform duration-300 ease-in-out" id="nav">
+        <div class="flex  justify-end">
+          <span class="min-h-[4rem] min-w-[4rem] max-w-[4rem] bg-gray-500  flex justify-center items-center rounded-full hover:bg-pink-700 transition duration-300 ease-in-out" id="close"><i class="fa-solid fa-xmark text-4xl"></i></span>
+        </div>
+        <ul class="space-y-5">
+          <li class="text-4xl text-indigo-950 font-semibold"><a class="flex justify-between" href="#">Home</a></li>
+          <li class="text-4xl text-indigo-950 font-semibold"><a class="flex justify-between" href="#"><span>Study</span><i class="fa-solid fa-angle-right"></i></a></li>
+          <li class="text-4xl text-indigo-950 font-semibold"><a class="flex justify-between" href="#"><span>Student life</span><i class="fa-solid fa-angle-right"></i></a></li>
+          <li class="text-4xl text-indigo-950 font-semibold"><a class="flex justify-between" href="#"><span>Research and innovations</span><i class="fa-solid fa-angle-right"></i></a></li>
+          <li class="text-4xl text-indigo-950 font-semibold"><a class="flex justify-between" href="#"><span>Global</span><i class="fa-solid fa-angle-right"></i></a></li>
+          <li class="text-4xl text-indigo-950 font-semibold"><a class="flex justify-between" href="#"><span>About us</span><i class="fa-solid fa-angle-right"></i></a></li>
+        </ul>
+      </nav>
      <!-- tabs -->
 
      <section class="text-white flex justify-between items-center max-md:hidden">
