@@ -15,12 +15,20 @@
   <body class="font-poppins max-lg:overflow-x-hidden">
     
    <div class="bg-[url('/images/backimage.webp')]  min-h-screen bg-cover bg-no-repeat bg-center w-full pb-5 max-lg:bg-fill max-lg:min-h-[900px] max-md:min-w-3xl max-md:bg-blend-multiply max-md:bg-black/40">
-  <div class="w-[1240px] mx-auto pt-5 max-lg:w-3xl max-lg:px-3 m">
+  <div class="w-[1240px] mx-auto pt-5 max-lg:w-3xl max-lg:px-3 ">
     <nav class="flex justify-between  text-white ">
-      <div class="w-48 h-24">
+      <div class="max-md:flex max-md:justify-between  max-md:mx-auto max-md:min-w-lg"> 
+
+         <div class="w-48 h-24 ">
         <a href=""><img src="./images/logo.svg" alt="University of Liverpool Logo" class="invert">
 </a>
       </div>
+             <div class="md:hidden space-x-3  ">
+        <i class="text-3xl fa-solid fa-magnifying-glass"></i>
+        <i class="text-3xl fa-solid fa-bars"></i>
+      </div>
+      </div>
+     
       <ul class="flex gap-x-5 text-base max-md:hidden">
        <li class="hover:underline transition hover:cursor-pointer "><a href="#">News</a>
       </li>
@@ -31,10 +39,7 @@
        <li class="hover:underline transition hover:cursor-pointer"><a href="#">Staff</a></li>
        <li class="hover:underline transition hover:cursor-pointer"><a href="#">Students</a></li>
       </ul>
-      <div class="md:hidden space-x-10">
-        <i class="text-5xl fa-solid fa-magnifying-glass"></i>
-        <i class="text-5xl fa-solid fa-bars"></i>
-      </div>
+      
      </nav>
 
      <!-- toggle navbar -->
@@ -112,7 +117,7 @@
       </div>
     </div>
 
-    <div class="bg-pink-500 mt-10 flex items-center  gap-x-3 px-10 max-lg:px-2 max-lg:mt-0">
+    <div class="bg-pink-500 mt-10 flex items-center  gap-x-3 px-10 max-lg:px-2 max-lg:mt-0 max-md:flex-col">
        <div class="">
         <img src="./images/computer.svg" alt="" class="invert w-full mt-5">
        </div>
