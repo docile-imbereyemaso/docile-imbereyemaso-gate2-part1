@@ -12,10 +12,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/46ecabe206.js" crossorigin="anonymous"></script>
   </head>
-  <body class="font-poppins">
+  <body class="font-poppins max-lg:overflow-x-hidden">
     
-   <div class="bg-[url('/images/backimage.webp')]  h-screen bg-cover bg-no-repeat bg-center min-w-full pb-5">
-  <div class="max-w-[1250px] mx-auto pt-5">
+   <div class="bg-[url('/images/backimage.webp')]  min-h-screen bg-cover bg-no-repeat bg-center w-full pb-5 max-lg:bg-fill max-lg:min-h-[900px]">
+  <div class="w-[1240px] mx-auto pt-5 max-lg:w-3xl">
     <nav class="flex justify-between  text-white">
       <div class="w-48 h-24">
         <a href=""><img src="./images/logo.svg" alt="University of Liverpool Logo" class="invert">
@@ -36,12 +36,12 @@
      <!-- tabs -->
 
      <section class="text-white flex justify-between items-center">
-      <ul class="flex gap-x-10">
-        <li class=""><a href="" class="font-semibold text-lg"> <span class="relative group"> Study <span class="absolute left-0 right-0 bg-white h-1 -bottom-3 group-hover:w-full w-0"></span>  </span> <i class="fa-solid fa-angle-down"></i></a></li>
-          <li class=""><a href="" class="font-semibold text-lg"> <span class="relative group"> Student life <span class="absolute left-0 right-0 bg-white h-1 -bottom-3 group-hover:w-full w-0"></span>  </span> <i class="fa-solid fa-angle-down"></i></a></li>
-             <li class=""><a href="" class="font-semibold text-lg"> <span class="relative group"> Research and innovation <span class="absolute left-0 right-0 bg-white h-1 -bottom-3 group-hover:w-full w-0"></span>  </span> <i class="fa-solid fa-angle-down"></i></a></li>
-                <li class=""><a href="" class="font-semibold text-lg"> <span class="relative group"> Global <span class="absolute left-0 right-0 bg-white h-1 -bottom-3 group-hover:w-full w-0"></span>  </span> <i class="fa-solid fa-angle-down"></i></a></li>
-                   <li class=""><a href="" class="font-semibold text-lg"> <span class="relative group"> About us <span class="absolute left-0 right-0 bg-white h-1 -bottom-3 group-hover:w-full w-0"></span>  </span> <i class="fa-solid fa-angle-down"></i></a></li>
+      <ul class="flex gap-x-10 max-lg:gap-x-4 ">
+        <li class=""><a href="" class="font-semibold text-lg max-lg:text-base"> <span class="relative group"> Study <span class="absolute left-0 right-0 bg-white h-1 -bottom-3 group-hover:w-full w-0"></span>  </span> <i class="fa-solid fa-angle-down"></i></a></li>
+          <li class=""><a href="" class="font-semibold text-lg max-lg:text-base"> <span class="relative group"> Student life <span class="absolute left-0 right-0 bg-white h-1 -bottom-3 group-hover:w-full w-0"></span>  </span> <i class="fa-solid fa-angle-down"></i></a></li>
+             <li class=""><a href="" class="font-semibold text-lg max-lg:text-base"> <span class="relative group"> Research and innovation <span class="absolute left-0 right-0 bg-white h-1 -bottom-3 group-hover:w-full w-0"></span>  </span> <i class="fa-solid fa-angle-down"></i></a></li>
+                <li class=""><a href="" class="font-semibold text-lg max-lg:text-base"> <span class="relative group"> Global <span class="absolute left-0 right-0 bg-white h-1 -bottom-3 group-hover:w-full w-0"></span>  </span> <i class="fa-solid fa-angle-down"></i></a></li>
+                   <li class=""><a href="" class="font-semibold text-lg max-lg:text-base"> <span class="relative group"> About us <span class="absolute left-0 right-0 bg-white h-1 -bottom-3 group-hover:w-full w-0"></span>  </span> <i class="fa-solid fa-angle-down"></i></a></li>
               </ul>
       <div >
         <button class="text-lg"><i class="fa-solid fa-magnifying-glass mr-2"></i>
@@ -52,7 +52,7 @@
 
      <!-- first section -->
 
-     <section class="text-white mt-10">
+     <section class="text-white mt-10 max-lg:h-screen  max-lg:flex max-lg:flex-col max-lg:justify-center">
       <p class="font-bold text-[40px] px-5 py-5 border-4 max-w-180 leading-9">YOUR NEXT CHAPTER STARTS NOW</p>
       <p class="max-w-140 border-3 border-t-0 px-5 py-5 text-2xl font-semibold">Welcome to Liverpool! If you're joining us in September, we can't wait to meet you. Find out what you can do now to get ready.</p>
       <p class="mt-10 border-2 max-w-70 px-5 py-4 text-lg font-semibold ">Explore our welcome activities <i class="fa-solid fa-angle-right ml-3"></i></p>
@@ -63,31 +63,31 @@
  
    </div>
 
-   <section class="bg-blue-950 py-5">
-    <div class="max-w-5xl mx-auto py-5 flex gap-x-10 items-center">
+   <section class="bg-blue-950 py-5 ">
+    <div class="max-w-5xl mx-auto py-5 flex gap-x-10 items-center max-lg:px-4">
        <p class="text-white text-2xl font-bold">Find your course</p>
        <div class="flex-grow flex gap-x-4">
         <input type="text" class="bg-white w-full h-13 outline-none px-4 ring-1 ring-indigo-700">
         <button class="bg-transparent text-white h-13 px-4 border border-white texl-lg">Search</button>
        </div>
-       <div class="text-white flex gap-x-4 flex-col ">
+       <div class="text-white flex gap-x-4 flex-col max-lg:hidden">
         <a href="#" class="text-lg tracking-widest font-semibold underline hover:decoration-2 transition">Course by A-Z</a>
         <a href="#" class="text-lg tracking-widest font-semibold underline hover:decoration-2 transition">Courses by Subject</a>
        </div>
     </div>
    
-    <div class="mt-5 flex mx-auto max-w-3xl pl-22 gap-x-4 ">
+    <div class="mt-5 flex mx-auto max-w-3xl pl-22 gap-x-4 max-lg:flex-col max-lg:pl-55">
       <p class="group hover:cursor-default"><span class=" bg-white rounded-full transition group-hover:bg-transparent mr-3"><i class="fa-regular fa-circle text-xl text-white"></i></span><span class="text-xl text-white ">Undergraduate</span></p>
       <p class="group hover:cursor-default"><span class="  rounded-full transition group-hover:bg-white mr-3"><i class="fa-regular fa-circle text-xl text-white"></i></span><span class="text-xl text-white ">Postgraduate taught</span></p>
       <p class="group hover:cursor-default"><span class="  rounded-full transition group-hover:bg-white mr-3"><i class="fa-regular fa-circle text-xl text-white"></i></span><span class="text-xl text-white ">Postgraduate research</span></p>
     </div>
    </section>
 
-   <section class="pt-15 max-w-[1250px] mx-auto">
+   <section class="pt-15 max-w-[1250px] mx-auto max-lg:max-w-3xl">
     <p class="text-4xl text-gray-800 font-bold mb-7">Discover the University of Liverpool</p>
 
-    <div class="flex gap-x-14">
-      <div class="max-w-md"> 
+    <div class="flex gap-x-14 max-lg:flex-col-reverse">
+      <div class="max-w-md max-lg:max-w-full"> 
         <img src="./images/contact-us-VGM.jpg.jpeg" alt="" class="object-fit">
       </div>
       <div class="space-y-8 pr-13">
@@ -99,22 +99,22 @@
           Since 1881, we've been at the forefront of world-class research and education, known for our cutting-edge facilities and relentless pursuit of excellence and achievement. Find out how you can be part of our vibrant community and explore the work we’re doing with our famous home city.
         </p>
 
-        <div class="mt-5 space-x-5">
+        <div class="mt-5 space-x-5 max-lg:mb-10">
           <a href="#" class="border-1 px-10 py-5 group"><span class="text-xl text-gray-800 group-hover:underline">Learn about us</span></a>
           <a href="#" class="border-1 px-10 py-5 group"> <span class="text-xl text-gray-800 group-hover:underline">Liverpool: Our city, Our inspiration</span></a>
         </div>
       </div>
     </div>
 
-    <div class="bg-pink-500 mt-10 flex items-center  gap-x-3 px-10">
+    <div class="bg-pink-500 mt-10 flex items-center  gap-x-3 px-10 max-lg:px-2 max-lg:mt-0">
        <div class="">
         <img src="./images/computer.svg" alt="" class="invert w-full mt-5">
        </div>
-        <div class="flex flex-grow gap-x-10">
+        <div class="flex flex-grow gap-x-10 max-lg:grow-0">
              <p class="text-white text-3xl font-bold shrink-0">Manage your offer</p>
        
     
-        <p class="text-white text-2xl ">
+        <p class="text-white text-2xl max-lg:text-base ">
           Find out how to confirm your place to study at Liverpool and make changes to your offer.
         </p>
         </div>
@@ -128,7 +128,7 @@
     </div>
 
 
-      <div class="mt-10 flex bg-[rgb(33_43_88)]">
+      <div class="mt-10 flex bg-[rgb(33_43_88)] max-lg:mt-0 max-lg:flex-col-reverse">
     <div class="py-15 px-10 text-white space-y-5">
       <h1 class="text-3xl font-bold">Study with us</h1>
       <p class="text-lg">Discover endless possibilities. We offer a range of courses with support and expertise to help you succeed in your future career. Find your perfect course, explore our subject areas or discover everything you need to know about studying with us.</p>
@@ -147,7 +147,7 @@
     </div>
   </div>
 
-  <div class="bg-pink-500 mt-10 flex items-center  justify-between px-10 gap-x-10">
+  <div class="bg-pink-500 mt-10 flex items-center  justify-between px-10 gap-x-10 max-lg:mt-0">
       <div class="flex items-center gap-x-5">
         <div class="w-48">
           <img src="./images/hands.svg" alt="" class="invert w-full">
@@ -166,33 +166,33 @@
     </div>
 
 
-    <div class="mt-10">
-     <h1 class="text-2xl text-gray-900 font-bold mb-10">Our rankings and reputation</h1>
+    <div class="mt-10 max-lg:mt-5">
+     <h1 class="text-2xl text-gray-900 font-bold mb-10 max-lg:text-3xl">Our rankings and reputation</h1>
      
-     <main class="flex gap-x-5">
-       <div class="flex items-center gap-x-10 pl-10  max-w-xl justify-between pt-20">
-          <div class="w-">
-            <img src="./images/top.png" alt="" class="w-full  object-cover">
+     <main class="flex gap-x-5 ">
+       <div class="flex items-center gap-x-10 pl-10 max-lg: max-w-xl justify-between pt-20 max-lg:pt-15 max-lg:flex-col max-lg:items-center ">
+          <div class="">
+            <img src="./images/top.png" alt="" class="w-full max-lg:w-64 object-cover">
           </div>
-           <div class="space-y-10">
+           <div class="space-y-10 max-lg:-translate-y-45">
             <h2 class="text-lg text-gray-800 font-extrabold">World Top 150</h2>
             <p class="text-gray-700 text-lg">QS World University Rankings 2026 places us in the Top 150 global universities. We've moved up to 147th in the world, climbing 43 places in the last 3 years and up from 165th in the 2025 rankings.</p>
            </div>
        </div>
-       <div class="space-y-20">
-        <div class="flex gap-x-19">
-          <div class="w-24"><img src="./images/tef.png" alt=""></div>
+       <div class="space-y-20 max-lg:space-y-10">
+        <div class="flex gap-x-19 max-lg:flex-col">
+          <div class="w-24 max-lg:w-full"><img src="./images/tef.png" alt=""></div>
           <p class="text-lg text-gray-800  max-w-md">
          Our teaching is rated Gold, the highest level, by the Teaching Excellence Framework.</p>
         </div>
-        <div class="flex gap-x-19">
-          <div class="w-24"><img src="./images/second.jpeg" alt=""></div>
+        <div class="flex gap-x-19 max-lg:flex-col">
+          <div class="w-24 max-lg:w-full"><img src="./images/second.jpeg" alt=""></div>
           <p class="text-lg text-gray-800  max-w-md">
            We're ranked 19th overall in the United Kingdom in the Complete University Guide's UK League Table.
           </p>
         </div>
-            <div class="flex gap-x-19">
-          <div class="w-24"><img src="./images/third.png" alt=""></div>
+            <div class="flex gap-x-19 max-lg:flex-col">
+          <div class="w-24 max-lg:w-full"><img src="./images/third.png" alt=""></div>
           <p class="text-lg text-gray-800  max-w-md">
           We’re ranked in the top 160 universities globally in the Times Higher Education World University rankings.
           </p>
@@ -200,27 +200,27 @@
        </div>
      </main>
 
-     <a href="#" class="block mt-10 border-1 w-fit px-3 py-4 group"> <span class="text-xl text-gray-900 font-semibold group-hover:underline transition">Explore our rankings and reputation</span></a>
+     <a href="#" class="block mt-10 border-1 w-fit px-3 py-4 group max-lg:ml-10"> <span class="text-xl text-gray-900 font-semibold group-hover:underline transition">Explore our rankings and reputation</span></a>
     </div>
 
 
 
-    <div class="mt-10 bg-[rgb(33_43_88)] flex min-h-80">
+    <div class="mt-10 bg-[rgb(33_43_88)] flex min-h-80 max-lg:flex-col-reverse">
 
         <div class="mx-auto max-w-2xl py-20 space-y-5">
           <h1 class="text-4xl text-white font-bold">Discover Liverpool in India</h1>
           <p class="text-lg text-justify text-white font-semibold">Introducing our new campus in the city of Bengaluru, the centre of high-tech industry in India. Find out more about our new campus, which will strengthen existing partnerships, build new connections and bring our world-class teaching and research to India.</p>
            <a href="#" class="block border-1 w-fit text-white px-5 py-4 font-semibold group"><span class="group-hover:underline transition decoration-2">Find out more</span></a>
         </div>
-        <div class="max-w-md">
+        <div class="max-w-md max-lg:max-w-full">
           <img src="./images/India,campus,header(1).jpg.jpeg" alt="" class="w-full h-full object-fit ">
         </div>
     </div>
 
-    <h1 class="text-4xl text-gray-800 font-bold mt-10">Our research: Transforming lives, changing the world</h1>
+    <h1 class="text-4xl text-gray-800 font-bold mt-10 max-lg:text-3xl">Our research: Transforming lives, changing the world</h1>
     <p class="mt-10 text-justify text-xl text-gray-700 ">Discover how our research is making a difference all over the world. As a founding member of the Russell Group, research is the driving force behind our success, tackling real-world challenges to have a positive impact on society and the world around us.</p>
 
-    <section class="mt-10 grid grid-cols-3 gap-x-10 gap-y-10">
+    <section class="mt-10 grid grid-cols-3 gap-x-10 gap-y-10 max-lg:grid-cols-1">
 
        <div class="border-t-1 border-t-gray-600 pt-5">
         <div class="relative group">
@@ -268,17 +268,17 @@
     </section>
     
 
-  <div class="mt-10 flex bg-white">
-  <div class="max-w-md">
+  <div class="mt-10 flex bg-white max-lg:flex-col">
+  <div class="max-w-md max-lg:max-w-full">
       <img src="./images/student-life.jpeg" alt="" class="object-cover h-full">
     </div>
-    <div class="py-15 px-10 text-black space-y-5">
+    <div class="py-15 px-10 text-black space-y-5 max-lg:px-4">
       <h1 class="text-3xl font-bold text-gray-800">Discover a vibrant student life in Liverpool</h1>
       <p class="text-lg text-gray-800 max-w-2xl ">
         Enjoy a fantastic student experience when you study with us. Explore the Guild of Students, learn more about what’s happening in our amazing home city and discover your accommodation options.
       </p>
 
-      <div class="flex flex-wrap gap-4">
+      <div class="flex flex-wrap gap-4 max-lg:flex-nowrap">
         <a href="" class="border-1 px-8 py-4 group text-gray-800"><span class="font-semibold group-hover:underline">Student life at Liverpool</span></a>
         <a href="" class="border-1 px-8 py-4 group text-gray-800"><span class="font-semibold group-hover:underline">Why choose Liverpool?</span></a>
         <a href="" class="border-1 px-8 py-4 group text-gray-800"><span class="font-semibold group-hover:underline">Find your accommodation</span></a>
@@ -288,7 +288,7 @@
   </div>
 
 
-    <div class="mt-10 bg-[rgb(33_43_88)] flex h-80">
+    <div class="mt-10 bg-[rgb(33_43_88)] flex h-80 max-lg:flex-col-reverse max-lg:mt-110">
 
         <div class="mx-auto max-w-2xl py-10 space-y-5">
           <h1 class="text-3xl text-white font-bold">We're making an impact across the globe</h1>
@@ -301,7 +301,7 @@
           </div>
            
         </div>
-        <div class="max-w-md">
+        <div class="max-w-md max-lg:max-w-full">
           <img src="./images/global.jpeg" alt="" class="w-full h-full object-fit ">
         </div>
     </div>
@@ -311,12 +311,12 @@
    </section>
 
    <section class="bg-[rgb(237_237_233)] pb-4">
-     <div class="pt-15 max-w-[1250px] mx-auto">
+     <div class="pt-15 max-w-[1250px] mx-auto max-lg:max-w-3xl">
       <h1 class="text-3xl font-bold text-gray-900">Latest news</h1>
 
-      <main class="mt-15 flex gap-x-5 w-full">
-            <div class="flex max-w-2xl p-10 gap-x-8 bg-white">
-              <div class="b h-full w-220">
+      <main class="mt-15 flex gap-x-5 w-full ">
+            <div class="flex max-w-2xl p-10 gap-x-8 bg-white max-lg:flex-col max-lg:max-w-md max-lg:gap-y-4">
+              <div class="b h-full w-220 max-lg:w-fit">
                 <img src="./images/two-person.png" alt="" class="w-full h-full object-cover">
               </div>
                <div class="max-w-sm">
@@ -354,7 +354,7 @@
             </div>
       </main>
 
-      <a href="#" class="block mt-7 border-1 w-fit py-3 px-10 text-xl group">
+      <a href="#" class="block mt-7 border-1 w-fit py-3 px-10 text-xl group max-lg:ml-4">
        <span class="group-hover:underline decoration-2">Read more news</span>
         
       </a>
@@ -362,11 +362,11 @@
    </section>
 
      <section class="bg-[rgb(219_219_211)]">
-        <main class="pt-15 max-w-[1250px] mx-auto">
+        <main class="pt-15 max-w-[1250px] mx-auto max-lg:max-w-3xl">
           <h1 class="text-4xl mb-4 font-bold text-gray-800">Latest events</h1>
 
              <section class="flex gap-x-4">
-                 <div class="bg-white px-6 py-8 flex gap-x-4 max-w-2xl">
+                 <div class="bg-white px-6 py-8 flex gap-x-4 max-w-2xl max-lg:max-w-md max-lg:flex-col">
                       <div class="max-w-80"><img src="./images/fourth.webp" alt=""></div>
                       <div class="space-y-5">
                         <h2 class="text-sm text-gray-800 mb-2">LECTURE</h2>
@@ -411,12 +411,15 @@
   <footer class="bg-[rgb(33_42_48)]">
      
       <section class="pb-5 border-b-1 ">
-         <div class="pt-15 max-w-[1180px] mx-auto grid grid-cols-5 gap-x-15 pb-10">
 
-           <div class="flex flex-col">
+         <div class="pt-15 max-w-[1210px] mx-auto  pb-10 flex gap-x-5 justify-between">
+           <div class="flex flex-col min-w-70 ">
              <p class="border-2 border-white text-white text-xl font-bold w-fit px-3 py-2">THE ORIGINAL</p>
              <p class="self-end-safe border-2 border-white px-10 py-3 text-white font-bold">REDBRICK</p>
            </div>
+           <div class="grid grid-cols-4 gap-x-2 ">
+             
+          
            <div class="text-white">
             <h1 class="text-2xl font-bold mb-3">Information for</h1>
             <ul class="space-y-2">
@@ -464,6 +467,7 @@
             
            </div>
              
+         </div>
          </div>
   
 
