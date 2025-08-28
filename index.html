@@ -14,14 +14,14 @@
   </head>
   <body class="font-poppins max-lg:overflow-x-hidden">
     
-   <div class="bg-[url('/images/backimage.webp')]  min-h-screen bg-cover bg-no-repeat bg-center w-full pb-5 max-lg:bg-fill max-lg:min-h-[900px]">
-  <div class="w-[1240px] mx-auto pt-5 max-lg:w-3xl">
-    <nav class="flex justify-between  text-white">
+   <div class="bg-[url('/images/backimage.webp')]  min-h-screen bg-cover bg-no-repeat bg-center w-full pb-5 max-lg:bg-fill max-lg:min-h-[900px] max-md:min-w-3xl max-md:bg-blend-multiply max-md:bg-black/40">
+  <div class="w-[1240px] mx-auto pt-5 max-lg:w-3xl max-lg:px-3 m">
+    <nav class="flex justify-between  text-white ">
       <div class="w-48 h-24">
         <a href=""><img src="./images/logo.svg" alt="University of Liverpool Logo" class="invert">
 </a>
       </div>
-      <ul class="flex gap-x-5 text-base">
+      <ul class="flex gap-x-5 text-base max-md:hidden">
        <li class="hover:underline transition hover:cursor-pointer "><a href="#">News</a>
       </li>
        <li class="hover:underline transition hover:cursor-pointer"><a href="#">Jobs</a></li>
@@ -31,11 +31,17 @@
        <li class="hover:underline transition hover:cursor-pointer"><a href="#">Staff</a></li>
        <li class="hover:underline transition hover:cursor-pointer"><a href="#">Students</a></li>
       </ul>
+      <div class="md:hidden space-x-10">
+        <i class="text-5xl fa-solid fa-magnifying-glass"></i>
+        <i class="text-5xl fa-solid fa-bars"></i>
+      </div>
      </nav>
+
+     <!-- toggle navbar -->
 
      <!-- tabs -->
 
-     <section class="text-white flex justify-between items-center">
+     <section class="text-white flex justify-between items-center max-md:hidden">
       <ul class="flex gap-x-10 max-lg:gap-x-4 ">
         <li class=""><a href="" class="font-semibold text-lg max-lg:text-base"> <span class="relative group"> Study <span class="absolute left-0 right-0 bg-white h-1 -bottom-3 group-hover:w-full w-0"></span>  </span> <i class="fa-solid fa-angle-down"></i></a></li>
           <li class=""><a href="" class="font-semibold text-lg max-lg:text-base"> <span class="relative group"> Student life <span class="absolute left-0 right-0 bg-white h-1 -bottom-3 group-hover:w-full w-0"></span>  </span> <i class="fa-solid fa-angle-down"></i></a></li>
@@ -412,12 +418,12 @@
      
       <section class="pb-5 border-b-1 ">
 
-         <div class="pt-15 max-w-[1210px] mx-auto  pb-10 flex gap-x-5 justify-between">
-           <div class="flex flex-col min-w-70 ">
+         <div class="pt-15 max-w-[1210px] max-lg:max-w-3xl mx-auto  pb-10 flex gap-x-5 justify-between max-lg:flex-col max-lg:gap-y-9">
+           <div class="flex flex-col min-w-70   max-lg:mx-auto max-lg:max-w-sm ">
              <p class="border-2 border-white text-white text-xl font-bold w-fit px-3 py-2">THE ORIGINAL</p>
              <p class="self-end-safe border-2 border-white px-10 py-3 text-white font-bold">REDBRICK</p>
            </div>
-           <div class="grid grid-cols-4 gap-x-2 ">
+           <div class="grid grid-cols-4 gap-x-2 max-lg:grid-cols-2 max-lg:gap-y-5">
              
           
            <div class="text-white">
@@ -472,7 +478,7 @@
   
 
          <div class="border-t-1 border-t-gray-500 pb-10">
-           <section class=" max-w-[1180px] mx-auto flex justify-between pt-5">
+           <section class=" max-w-[1180px] mx-auto flex justify-between pt-5 max-lg:max-w-3xl max-lg:flex-col max-lg:gap-y-10">
              <div class="h-fit">
             <span class="text-gray-400 font-bold">Part of the</span>
             <div class=""><img src="./images/russeli.svg" alt=" " class="w-25 h-14 invert text-gray-400"></div>
@@ -490,8 +496,8 @@
           
          </div>
               <section class="border-t-1 border-t-gray-500">
-                    <div class="max-w-[1210px] mx-auto  pt-5">
-            <ul class="flex gap-x-5">
+                    <div class="max-w-[1210px] mx-auto  pt-5 max-lg:max-w-3xl">
+            <ul class="flex gap-x-5 max-lg:flex-wrap max-lg:gap-y-4">
               <li class="text-white text-lg underline hover:decoration-2 transition"><a href="#">Accessibility</a></li>
               <li class="text-white text-lg underline hover:decoration-2 transition"><a href="#">Freedom of information</a></li>
               <li class="text-white text-lg underline hover:decoration-2 transition"><a href="#">Cookie information</a></li>
@@ -501,7 +507,7 @@
               <li class="text-white text-lg underline hover:decoration-2 transition"><a href="#">Charitable status</a></li>
             </ul>
 
-            <p class="my-4 text-xl text-white ">&copy; University of Liverpool</p>
+            <p class="my-4 text-xl text-white max-lg:mt-5">&copy; University of Liverpool</p>
          </div>
               </section>
        
